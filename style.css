@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+
+
+.wrapper {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.links {
+    margin-right: 70px;
+    float: right;
+
+}
+
+.links li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.links li a {
+    display: inline-block;
+    color: #EAE3D2;
+    padding: 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+.links li a:hover {
+    color: #393E46;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline;
+    border-bottom: #393E46;
+}
+
+.links li:hover .dropdown {
+    color: #393E46;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline;
+    border-bottom: #393E46;
+    display: block;
+}
+
+
+.dropdown {
+    background: #6D9886;
+    position: absolute;
+    display: none;
+    top: 25px;
+    left: -10px;
+    width: 150px;
+
+}
+
+.dropdown li {
+    display: block
+}
+
+
+.logo:hover {
+    transform-origin: 50% 0;
+    animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: rotate(50deg);
+    }
+
+    10%,
+    90% {
+        transform: rotate(-50deg);
+    }
+
+    20%,
+    80% {
+        transform: rotate(30deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(0deg);
+    }
+}
+
+.links a.active {
+    color: #F47C7C;
+
+
+}
+
+.bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 50%;
+    z-index: -1;
+}
+
+.vidtoimg {
+    display: none;
+}
+
+a {
+    color: #EAE3D2;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #6D9886;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline;
+    border-bottom: #393E46;
+}
+
+h2 {
+    color: #393E46;
+    font-family: 'Playfair Display', serif;
+    margin-left: 120px;
+
+    font-size: 40px;
+
+}
+
+text {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-style: italic;
+    fill: #393E46;
+}
+
+.container {
+    margin-top: 10px;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 520px;
+    margin-right: 5px;
+    margin-left: 15px;
+    opacity: 0.9;
+}
+
+.row {
+    padding-left: 15px;
+
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    ;
+
+}
+
+section {
+    float: center;
+}
+
+.rectangle {
+    margin-top: 450px;
+    width: 100%;
+    height: 100px;
+}
+
+img {
+    width: 95%;
+    padding: 10px;
+    height: 330px;
+    align-items: center;
+}
+
+
+h3 {
+
+    text-align: center;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    background-color: #F2E7D5;
+    color: black;
+}
+
+.more {
+    text-align: center;
+    text-decoration: underline;
+    color: #1C3879
+}
+
+.email {
+    color: #1C3879;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        background: #393E46;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 4vw;
+        display: inline-block;
+        color: #EAE3D2;
+    }
+
+    .logo {
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bgvideo {
+        display: none;
+    }
+
+    h2 {
+        font-size: 7vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 95%;
+        margin: 0 0 2vw;
+    }
+
+    .column1,
+    .column2,
+    .columm3 {
+        width: 100%;
+        float: none;
+    }
+
+    .container {
+        float: none;
+        width: 100%;
+    }
+
+    .vidtoimg {
+        display: block;
+        position: fixed;
+        right: -10;
+        bottom: -10;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    .rectangle {
+        width: 100%;
+    }
+
+}
